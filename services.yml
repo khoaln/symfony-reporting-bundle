@@ -1,0 +1,10 @@
+parameters:
+
+services:
+
+    payment.reporting.provider:
+            class: Reporting\Provider\PaymentReportProvider
+            calls:
+                - [ setServiceContainer, [@service_container] ]
+            tags:
+                - { name: reporting.provider }

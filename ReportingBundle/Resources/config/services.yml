@@ -1,0 +1,5 @@
+parameters:
+
+services:
+    reporting.provider.chain:
+        class: ReportingBundle\Provider\ProviderChain
